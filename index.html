@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/assets/style/style.css" rel="stylesheet" />
+    <title>Media Element</title>
+  </head>
+  <body>
+    <header>
+      <h2>Embeding HTML in Media Element</h2>
+      <a href="table.html">Altschool Courses</a>
+      <a href="index.html"> Media Elements</a>
+    </header>
+    <div class="content">
+      <h3>We have Four (4) media element that exists in HTML</h3>
+      <ul>
+        <li>Audio</li>
+        <li>Video</li>
+        <li>Image</li>
+        <li>Picture</li>
+      </ul>
+    </div>
+    <!--audio element-->
+    <div class="audio">
+      <h2>The Audio Element</h2>
+      <p>
+        The audio element/tag allow files to be embedded into webpage. The
+        control attribute helped
+      </p>
+      <audio controls>
+        <source
+          src="/assets/audio/Pa_Salieu_-_Round_Round.mp3"
+          type="audio/mp3"
+        />
+        Your browser does not support the audio element.
+      </audio>
+      <p class="download-1">
+        <a href="/assets/audio/audio.mp3" download="audi.mp3">DOWNLOAD MP3</a>
+      </p>
+    </div>
+    <!--video element-->
+    <div class="video">
+      <h2>The Video element</h2>
+      <p>
+        The video element is another media element used in HTML to embed video
+        in a websites.
+      </p>
+
+      <video controls width="450" height="250">
+        <source src="/assets/Videos/rottvideo.mp4" type="video/mp4" />
+
+        Your browser does not support the video tag.
+      </video>
+
+      <p class="download-1">
+        <a href="/assets/Videos/rottvideo.mp4" download="video.mp3"
+          >DOWNLOAD MP4</a
+        >
+      </p>
+    </div>
+    <!--image element-->
+    <div class="element">
+      <h2>The Image Element</h2>
+      <p>The image element is among the media elements in HTML.</p>
+      <img
+        src="/assets/images/rottimage (1).jpeg"
+        alt="image of rottweiler"
+        width="480"
+        height="400"
+      />
+    </div>
+    <!--picture element-->
+    <div class="picture">
+      <h2>The Picture element</h2>
+      <p>
+        The picture element in HTML is a more advanced and flexible way to
+        handle responsive.
+      </p>
+      <picture>
+        <!--laptop-->
+        <source
+          media="(min-width:1025px)"
+          srcset="/assets/images/oshubz3.jpg"
+        />
+        <!--tablet-->
+        <source
+          media="(min-width: 640px)"
+          srcset="/assets/images/oshubz2.jpg"
+        />
+        <!--mobile-->
+        <source
+          media="(min-width: 320px)"
+          srcset="/assets/images/oshubz1.jpg"
+        />
+        <!--fall back image-->
+        <img
+          style="width: 370px"
+          src="/assets/images/oshubz3.jpg"
+          alt="my current picture"
+        />
+      </picture>
+    </div>
+  </body>
+</html>
